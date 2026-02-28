@@ -1,0 +1,23 @@
+# Core LangChain
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-openai==0.3.0
+langchain-huggingface==0.1.2
+
+# PDF Loading
+pypdf==5.1.0
+
+# Vector Store
+faiss-cpu==1.9.0
+
+# Embeddings (local, no API key needed)
+sentence-transformers==3.3.1
+
+# Web UI
+streamlit>=1.35.0
+
+# Environment management
+python-dotenv==1.0.1
+
+# Utilities
+tiktoken==0.8.0

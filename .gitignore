@@ -1,0 +1,77 @@
+# ── Secrets & credentials ──────────────────────────────────────────────────────
+# NEVER commit your actual .env — it contains API keys.
+# Only .env.example (the safe template) is committed.
+.env
+*.env
+!.env.example
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pyw
+.Python
+
+# Packaging / distribution
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+# Each person creates their own venv locally — never commit it.
+venv/
+.venv/
+env/
+.env/
+ENV/
+venv.bak/
+
+# ── FAISS vector index ─────────────────────────────────────────────────────────
+# Built locally from your documents — can always be regenerated.
+# May contain chunks of private/proprietary content — never commit.
+faiss_index/
+
+# ── User PDF uploads ───────────────────────────────────────────────────────────
+# The docs/ folder is committed (via .gitkeep) so the directory exists.
+# Actual PDFs are personal — other users bring their own.
+*.pdf
+*.PDF
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── OS metadata ────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editors & IDEs ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+.history/
+
+# ── Logs & temp ────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+tmpclaude-*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Jupyter ────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
