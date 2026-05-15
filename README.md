@@ -9,7 +9,7 @@ A growing collection of **Retrieval-Augmented Generation (RAG)** projects built 
 | # | Project | Use Case | Key Techniques |
 |---|---------|----------|----------------|
 | 01 | [PDF RAG Assistant](projects/01_pdf_rag_assistant/) | Chat with any PDF document | Multi-PDF ingestion, conversation memory, MMR retrieval, source citations |
-| 02 | [Library Assistant](projects/02_library_assistant/) | Book discovery & recommendations | Structured data RAG, CSV/JSON ingestion, metadata filtering |
+| 02 | [RAG Experiment Lab](projects/02_rag_experiment_lab/) | Parameter tuning & evaluation | LLM-as-judge, cross-encoder reranking, experiment comparison |
 
 ---
 
@@ -36,18 +36,26 @@ ai-rag-portfolio/
     │       ├── vector_store.py
     │       └── rag_chain.py
     │
-    └── 02_library_assistant/        ← Project 2: book discovery RAG
-        ├── app.py                   ← Streamlit web UI
+    └── 02_rag_experiment_lab/       ← Project 2: parameter tuning & evaluation
+        ├── app.py                   ← Streamlit web UI (Chat, Evaluate, Compare)
+        ├── main.py                  ← CLI entry point
         ├── requirements.txt
         ├── .env.example
         ├── README.md
         ├── ARCHITECTURE.md
-        ├── data/                    ← book catalog CSV/JSON files
+        ├── CONCEPTS.md
+        ├── EXERCISES.md
+        ├── test_sets/               ← evaluation test set JSON files
         └── src/
             ├── config.py
-            ├── book_loader.py
+            ├── embeddings.py
+            ├── document_loader.py
             ├── vector_store.py
-            └── rag_chain.py
+            ├── retriever.py
+            ├── reranker.py
+            ├── rag_chain.py
+            ├── evaluator.py
+            └── experiment.py
 ```
 
 ---
